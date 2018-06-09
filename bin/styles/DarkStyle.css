@@ -1,0 +1,205 @@
+QWidget[NormalWidget='NormalWidget']
+{
+	background-color: rgb(80, 80, 80);
+}
+
+QWidget[insetWidget='insetWidget']
+{
+	background: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 1px solid red;
+	border-left-color: rgb(40, 40, 40);
+	border-top-color: rgb(40, 40, 40);
+	border-right-color: rgb(200, 200, 200);
+	border-bottom-color: rgb(200, 200, 200);
+	border-radius: 4px;
+}
+
+/*----------------------- QPushButton -------------------------------------------*/
+QPushButton
+{
+	background-color: rgb(100, 100, 100);
+	color: rgb(255, 255, 255);
+	border: 2px ridge rgb(80, 80, 80);
+	border-radius: 4px;
+	width: 80px;
+	height: 30px;
+}
+
+QPushButton:pressed
+{
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(60, 60, 60);
+	border-left-color: rgb(40, 40, 40);
+	border-top-color: rgb(40, 40, 40);
+	border-right-color: rgb(200, 200, 200);
+	border-bottom-color: rgb(200, 200, 200);
+	border-radius: 4px;
+}
+
+QPushButton:hover
+{
+	background-color: rgb(120, 120, 120);
+}
+
+QPushButton:disabled
+{
+	background-color: rgb(80, 80, 80);
+	color: rgb(180, 180, 180);
+}
+
+/*------------------------------------- QLineEdit --------------------------------------*/
+QLineEdit 
+{
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(60, 60, 60);
+	border-left-color: rgb(40, 40, 40);
+	border-top-color: rgb(40, 40, 40);
+	border-right-color: rgb(200, 200, 200);
+	border-bottom-color: rgb(200, 200, 200);
+	border-radius: 4px;
+	min-height: 30px;
+}
+
+/*------------------------------------- QLineEdit --------------------------------------*/
+QProgressBar
+{
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(60, 60, 60);
+	border-left-color: rgb(40, 40, 40);
+	border-top-color: rgb(40, 40, 40);
+	border-right-color: rgb(200, 200, 200);
+	border-bottom-color: rgb(200, 200, 200);
+	border-radius: 4px;
+	text-align: center;
+}
+
+QProgressBar::chunk 
+{
+    background-color: #67A125;
+    width: 20px;
+}
+
+/*------------------------------------- QLabel --------------------------------------*/
+QLabel
+{
+	color: rgb(255, 255, 255);
+}
+
+/*------------------------------------- QComboBox --------------------------------------*/
+QComboBox
+{
+	background-color: rgb(100, 100, 100);
+	color: rgb(255, 255, 255);
+	border: 2px ridge rgb(80, 80, 80);
+	border-radius: 4px;
+	height: 30px;
+}
+
+QComboBox:hover
+{
+	background-color: rgb(120, 120, 120);
+}
+
+QComboBox QAbstractItemView 
+{
+    border: 2px ridge rgb(80, 80, 80);
+    background-color: rgb(100, 100, 100);
+	color: rgb(255, 255, 255);
+	outline: 0px;
+}
+
+QComboBox QAbstractItemView::item
+{
+    border: 0px solid rgb(100, 100, 100);
+    background-color: rgb(100, 100, 100);
+	color: rgb(255, 255, 255);
+	min-height: 20px;
+}
+
+QComboBox QAbstractItemView::item:hover
+{
+	background-color: rgb(80, 80, 80);
+    border: 1px ridge rgb(80, 80, 80);
+	border-left-color: rgb(40, 40, 40);
+	border-top-color: rgb(40, 40, 40);
+	border-right-color: rgb(200, 200, 200);
+	border-bottom-color: rgb(200, 200, 200);
+	border-radius: 4px;
+	color: rgb(255, 255, 255);
+}
+
+QComboBox QAbstractItemView::item:selected
+{
+	background-color: rgb(80, 80, 80);
+    border: 1px ridge rgb(80, 80, 80);
+	border-left-color: rgb(40, 40, 40);
+	border-top-color: rgb(40, 40, 40);
+	border-right-color: rgb(200, 200, 200);
+	border-bottom-color: rgb(200, 200, 200);
+	border-radius: 4px;
+	color: rgb(255, 255, 255);
+}
+
+QComboBox::drop-down
+{
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+	background-color: rgb(100, 100, 100);
+}
+
+QComboBox::down-arrow 
+{
+    image: url(./Icons/arrow-down.png);
+}
+
+QComboBox::down-arrow:on
+{
+	 /* shift the arrow when popup is open */
+	background-color: rgb(80, 80, 80);
+}
+
+/*------------------------------------- QToolTip --------------------------------------*/
+QToolTip
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(55, 55, 55);
+	border: 1px solid rgb(100, 100, 100);
+}
+
+/*------------------------------------- QMenu --------------------------------------*/
+QMenu
+{
+	background-color: rgb(100, 100, 100);
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(60, 60, 60);
+	border-radius: 4px;
+	margin: 2px;
+}
+
+QMenu::item
+{
+	background-color: rgb(100, 100, 100);
+	color: rgb(255, 255, 255);
+	padding: 2px 25px 2px 20px;
+}
+
+QMenu::item:hover, QMenu::item:selected
+{
+	background-color: rgb(80, 80, 80);
+    border: 1px ridge rgb(80, 80, 80);
+	border-left-color: rgb(40, 40, 40);
+	border-top-color: rgb(40, 40, 40);
+	border-right-color: rgb(200, 200, 200);
+	border-bottom-color: rgb(200, 200, 200);
+	border-radius: 4px;
+	color: rgb(255, 255, 255);
+}
