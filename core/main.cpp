@@ -17,14 +17,6 @@ int main(int argc, char *argv[])
         a.setStyleSheet(styleSheetString);
     }
 
-//    SignalsAndSlotDemo w;
-//    w.resize(300, 150);
-//    w.show();
-
-//    ThreadSigAndSlotsWidget threadW;
-//    threadW.resize(300, 150);
-//    threadW.show();
-
     GifBuilderWidget w;
     w.resize(1000, 800);
     w.show();
